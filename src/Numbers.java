@@ -5,13 +5,14 @@ public class Numbers {
 
         Scanner input = new Scanner(System.in);
         int i = 0;
-        int[] numbers = new int[5];
+        int lenght = 5;
+        int[] numbers = new int[lenght];
         do {
             System.out.println("Wprowadź liczbę");
             numbers[i] = input.nextInt();
             input.nextLine();
             i++;
-        } while (i < 5);
+        } while (i < lenght);
         input.close();
 
         int sum = (numbers[0] + numbers[2] + numbers[4]);
